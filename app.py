@@ -22,7 +22,10 @@ def dataRestit():
             except:
                 pass
             try:
-                x["youtubeResult"]["Commentaires"] =[(str(item["Comment Text:"]),int(item["Likes on Comment:"])) for item in x["youtubeResult"]["Commentaires"]]
+                comentaireYoutubeList=[str(item["Comment Text:"]) for item in x["youtubeResult"]["Commentaires"]]
+                likeYoutubeParCommentaireList=[int(item["Likes on Comment:"]) for item in x["youtubeResult"]["Commentaires"]]
+                x.update({'commentaireYoutube':comentaireYoutubeList})
+                x.update({'likeYoutubeParCommentaire':likeYoutubeParCommentaireList})
             except:
                 pass
 
