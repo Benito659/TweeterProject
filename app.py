@@ -7,7 +7,7 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__) 
 
-@app.route('/data/', methods = ['GET', 'POST']) 
+@app.route('/data/', methods = ['GET']) 
 def dataRestit(): 
     if(request.method == 'GET'): 
         uri = "mongodb://mongodbinstancenew:cvxgF0RwIc1SXw0vRbdcEyBp6BhmVriiKFBECUv4ToSbEI5tYinYXOJAW5Nv1PiYDNvsQyETsyT5otGwnJsHcg==@mongodbinstancenew.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@mongodbinstancenew@"
