@@ -17,6 +17,15 @@ def dataRestit():
         listDB=[]
         for x in mycol.find():
             x.pop('_id')
+            try:
+                x["tweetsResponse"] =[item["text"] for item in x["tweetsResponse"]]
+            except:
+                pass
+            try:
+                x["youtubeResult"]["Commentaires"] =[(item["Comment Text:"],item["Likes on Comment:"]) for item in x["youtubeResult"]["Commentaires"]]
+            except:
+                pass
+
             listDB.append(x)
         return jsonify({'data': listDB}) 
 
