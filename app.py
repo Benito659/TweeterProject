@@ -34,10 +34,12 @@ def dataRestit():
 
 
 @app.route('/model/', methods = ['GET']) 
-def disp(): 
+def modelCall(): 
     return jsonify({'data': num**2}) 
 
-
+@app.route('/') 
+def disp(): 
+    return """<iframe title="latest" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=e05d2515-0e68-47d4-8dee-50b5a4e0f382&autoAuth=true&ctid=987b6351-7e5c-42d9-8e61-3830e896b75e&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLW5vcnRoLWV1cm9wZS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>"""
 
 
 if __name__ == '__main__': 
