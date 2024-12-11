@@ -4,4 +4,4 @@
 
 Below is the architecture of the project:
 
-![Project Architecture](images/architecture.png "Project Architecture Diagra")
+![Project Architecture](untitled5.png "Project Architecture Diagra")
