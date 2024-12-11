@@ -10,11 +10,11 @@ import os
 
 
 #### Defining variables and credentials
-consumer_key = "zuBhiUfuKbOWiQUrQOoUsbzyR"
-consumer_secret = "xQ5YY3dJbNZLHVUZXCEkG7val1mDN1r7MluwkBTvPTRrAzCiGP"
-access_token = "1264225213161619457-u8ZEceXQe3w7VnMpVwbd1L3W7mc47n"
-access_token_secret = "3t6tVwofOJYP3oXfG8cae19VgjJssePmSppd6lN76Mu7y"
-BEARER_TOKEN = 'AAAAAAAAAAAAAAAAAAAAAHmTawEAAAAAjTsiKpHQ3VFPzJCf05VQmFrjycs%3DzTSJfV7MwZIMTUAtSvIhB4YHieZ4XQxTrVz9HAGv74bGhwfcB1'
+consumer_key = ""
+consumer_secret = ""
+access_token = ""
+access_token_secret = ""
+BEARER_TOKEN = ''
 
 headers = {
     'Authorization': f"Bearer {BEARER_TOKEN}",
